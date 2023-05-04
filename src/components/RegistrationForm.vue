@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { ref } from "vue";
 import { useStore } from "vuex";
 // import store from "../store";
@@ -25,7 +25,7 @@ const register = () => {
 //     console.log({ userInfo });
 //   });
 // };
-</script>
+</script> -->
 
 <template>
   <div class="container-xxl py-5">
@@ -38,7 +38,7 @@ const register = () => {
             </h6>
             <h2 class="mt-2">Sign Up</h2>
           </div>
-          <div>
+          <!-- <div>
             <form @submit.prevent="register">
               <div class="row g-3">
                 <div class="col-12">
@@ -78,7 +78,7 @@ const register = () => {
                 <router-link :to="{ name: 'login' }">Sign in</router-link>
               </p>
             </form>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

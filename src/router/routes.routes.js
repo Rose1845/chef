@@ -1,4 +1,3 @@
-import HomeView from "@/views/HomeView.vue";
 import LoginForm from "@/components/LoginForm.vue";
 import ContactView from "@/views/ContactView.vue";
 import RegistrationForm from "@/components/RegistrationForm.vue";
@@ -7,7 +6,7 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: HomeView,
+    component: import("@/views/HomeView.vue"),
   },
 
   {
@@ -25,7 +24,6 @@ const routes = [
     name: "contact",
     // meta:{requi},
     component: ContactView,
-    
   },
 ];
 

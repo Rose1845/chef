@@ -12,17 +12,17 @@ import FooterAll from "./components/FooterAll.vue";
 
 <template>
   <div>
-    <div></div>
     <NavBar />
 
     <router-view></router-view>
+
     <FooterAll />
   </div>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
 }
-</style>
+</style> -->

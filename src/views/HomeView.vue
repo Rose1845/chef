@@ -6,12 +6,13 @@ import { services } from "../../data";
 <template>
   <main>
     <div class="container-xxl bg-white p-0">
-      <div class="container-xxl py-5  hero-header mb-5">
+      <div class="container-xxl py-5 hero-header mb-5">
         <div class="container my-5 py-5 px-lg-5">
           <div class="row g-5 py-5">
             <div class="col-lg-6 text-center text-lg-start">
-              <h1 class="text-dark mb-4 ">
-               <span class="text-primary">Chef</span> you need to grow your restaurant rapidly
+              <h1 class="text-dark mb-4">
+                <span class="text-primary">Chef</span> you need to grow your
+                restaurant rapidly
               </h1>
               <p class="text-dark pb-3 animated zoomIn">
                 Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum
@@ -32,8 +33,8 @@ import { services } from "../../data";
             <div class="col-lg-6 text-center text-lg-start">
               <img
                 class="img-fluid"
-                src="https://o.remove.bg/downloads/09d64c44-061e-4e96-b7b2-cce1e665479e/photo-1577219492769-b63a779fac28-removebg-preview.png"
-                alt=""
+                src="../../dist/assets/chef.png"
+                alt="no pic"
               />
             </div>
           </div>
@@ -47,8 +48,8 @@ import { services } from "../../data";
             <div class="col-lg-6 wow fadeInUp">
               <div class="section-title position-relative mb-4 pb-2">
                 <h6 class="position-relative text-primary ps-4">About Us</h6>
-                <h2 class="mt-2">
-                  The best Chef with over 5 years of experience
+                <h2 class="mt-2 capitalize">
+                  We produce the  best Chef for your restaurant business growth 
                 </h2>
               </div>
               <p class="mb-4"></p>
@@ -89,10 +90,7 @@ import { services } from "../../data";
               </div>
             </div>
             <div class="col-lg-6">
-              <img
-                class="img-fluid"
-                src="https://o.remove.bg/downloads/4971ee3f-453d-4fb5-ab2a-1199bfe7f1a3/istockphoto-1415519917-170667a-removebg-preview.png"
-              />
+              <img class="img-fluid" src="../../dist/assets/bestchef.png" />
             </div>
           </div>
         </div>
@@ -110,11 +108,11 @@ import { services } from "../../data";
             </h6>
             <h2 class="mt-2">What Solutions We Provide</h2>
           </div>
-          <div  class="row g-1 ml-3" >
+          <div class="row g-1 ml-3">
             <div
               v-for="service in services"
               class="card col-lg-4 col-md-6 ml-2"
-              :key="service.id"
+              :key="service.title"
             >
               <div
                 class="service-item d-flex flex-column justify-content-center text-center rounded"
@@ -243,7 +241,7 @@ import { services } from "../../data";
               </ul>
             </div>
           </div>
-          <div class="row g-4 portfolio-container">
+          <!-- <div class="row g-4 portfolio-container">
             <div class="col-lg-4 col-md-6 portfolio-item first">
               <div class="position-relative rounded overflow-hidden">
                 <img
@@ -269,10 +267,9 @@ import { services } from "../../data";
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
-      ss
     </div>
   </main>
 </template>
