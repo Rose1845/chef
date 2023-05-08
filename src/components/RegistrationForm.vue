@@ -1,31 +1,9 @@
-<!-- <script setup>
+<script setup>
 import { ref } from "vue";
-import { useStore } from "vuex";
-// import store from "../store";
-// import { registerUser } from "../firebase";
-// import { useRouter } from "vue-router";
-
-// const router = useRouter();
 
 const email = ref("");
 const password = ref("");
-// const name=ref("")s
-const store = useStore();
-
-const register = () => {
-  store.dispatch("register", { email, password });
-};
-// console.log(register);
-// const register = () => {
-//   registerUser(email.value, password.value, (error, userInfo) => {
-//     // if (error) {
-//     //   console.log({ error: error.message });
-//     // }
-//     // router.push("/login");
-//     console.log({ userInfo });
-//   });
-// };
-</script> -->
+</script>
 
 <template>
   <div class="container-xxl py-5">
@@ -38,7 +16,7 @@ const register = () => {
             </h6>
             <h2 class="mt-2">Sign Up</h2>
           </div>
-          <!-- <div>
+          <div>
             <form @submit.prevent="register">
               <div class="row g-3">
                 <div class="col-12">
@@ -78,7 +56,7 @@ const register = () => {
                 <router-link :to="{ name: 'login' }">Sign in</router-link>
               </p>
             </form>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>

@@ -1,25 +1,10 @@
 <script setup>
-// import { ref } from "vue";
-// import { emailPassLogin } from "../firebase";
-// import { useRouter } from "vue-router";
-// const router = useRouter();
-// import store from "../store";
+import { ref } from "vue";
 
-// const email = ref("");
-// const password = ref("");
-// const login = () => {
-//   store.dispatch("login", { email, password });
-//   // emailPassLogin(email.value, password.value, (error, userInfo) => {
-//   //   // if (error) {
-//   //   //   console.log({ error: error.message });
-//   //   // }
-//   //   // router.push("/");
-//   //   console.log({ userInfo });
-//   // });
-// };
+const email = ref("");
+const password = ref("");
 </script>
 <template>
-
   <div class="container-xxl py-5">
     <div class="container px-lg-5">
       <div class="row justify-content-center">
@@ -28,11 +13,12 @@
             <h2 class="mt-4">Login</h2>
           </div>
           <div>
-            <!-- <form @submit.prevent="login">
+            <form>
               <div class="row g-3">
                 <div class="col-12">
                   <div class="form-floating">
                     <input
+                      v-model="email"
                       type="email"
                       class="form-control"
                       id="name"
@@ -44,6 +30,7 @@
                 <div class="col-12">
                   <div class="form-floating">
                     <input
+                      v-model="password"
                       type="password"
                       class="form-control"
                       id="password"
@@ -65,7 +52,7 @@
                   >Create account</router-link
                 >
               </p>
-            </form> -->
+            </form>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import $ from "jquery";
-const navBarOpen = ref(false);
+const navBarOpen = ref(true);
 const toggleNavBar = () => {
   navBarOpen.value = !navBarOpen.value;
 };

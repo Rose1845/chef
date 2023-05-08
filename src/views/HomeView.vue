@@ -1,6 +1,8 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <script setup>
+
 import { services } from "../../data";
+// tabs
 </script>
 
 <template>
@@ -8,7 +10,7 @@ import { services } from "../../data";
     <div class="container-xxl bg-white p-0">
       <div class="container-xxl py-5 hero-header mb-5">
         <div class="container my-5 py-5 px-lg-5">
-          <div class="row g-5 py-5">
+          <div class="row g-5 py-5 flex-sm-row-reverse">
             <div class="col-lg-6 text-center text-lg-start">
               <h1 class="text-dark mb-4">
                 <span class="text-primary">Chef</span> you need to grow your
@@ -49,7 +51,7 @@ import { services } from "../../data";
               <div class="section-title position-relative mb-4 pb-2">
                 <h6 class="position-relative text-primary ps-4">About Us</h6>
                 <h2 class="mt-2 capitalize">
-                  We produce the  best Chef for your restaurant business growth 
+                  We produce the best Chef for your restaurant business growth
                 </h2>
               </div>
               <p class="mb-4"></p>
@@ -127,149 +129,13 @@ import { services } from "../../data";
                 <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
               </div>
             </div>
-            <!-- <div class="card col-lg-4 col-md-6">
-              <div
-                class="service-item d-flex flex-column justify-content-center text-center rounded"
-              >
-                <div class="service-icon flex-shrink-0">
-                  <i class="fa fa-home fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Pastry</h5>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Assumenda esse doloremque hic laudantium laboriosam itaque,
-                  aliquid sed. Incidunt, libero quas?
-                </p>
-                <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow zoomIn">
-              <div
-                class="service-item d-flex flex-column justify-content-center text-center rounded"
-              >
-                <div class="service-icon flex-shrink-0">
-                  <i class="fa fa-home fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Interior Design</h5>
-                <p>
-                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                  lorem sed diam stet diam sed stet lorem.
-                </p>
-                <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow zoomIn">
-              <div
-                class="service-item d-flex flex-column justify-content-center text-center rounded"
-              >
-                <div class="service-icon flex-shrink-0">
-                  <i class="fa fa-home fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Food Delivery</h5>
-                <p>
-                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                  lorem sed diam stet diam sed stet lorem.
-                </p>
-                <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow zoomIn">
-              <div
-                class="service-item d-flex flex-column justify-content-center text-center rounded"
-              >
-                <div class="service-icon flex-shrink-0">
-                  <i class="fa fa-home fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Baking</h5>
-                <p>
-                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                  lorem sed diam stet diam sed stet lorem.
-                </p>
-                <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow zoomIn">
-              <div
-                class="service-item d-flex flex-column justify-content-center text-center rounded"
-              >
-                <div class="service-icon flex-shrink-0">
-                  <i class="fa fa-home fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Home Making</h5>
-                <p>
-                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                  lorem sed diam stet diam sed stet lorem.
-                </p>
-                <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow zoomIn">
-              <div
-                class="service-item d-flex flex-column justify-content-center text-center rounded"
-              >
-                <div class="service-icon flex-shrink-0">
-                  <i class="fa fa-home fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Decoration</h5>
-                <p>
-                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                  lorem sed diam stet diam sed stet lorem.
-                </p>
-                <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
       <!-- Service End -->
 
-      <!-- Portfolio Start -->
-      <div class="container-xxl py-5">
-        <div class="container px-lg-5">
-          <div class="section-title position-relative text-center mb-5 pb-2">
-            <h6 class="position-relative d-inline text-primary ps-4">
-              Our Projects
-            </h6>
-            <h2 class="mt-2">Recently Launched Foods</h2>
-          </div>
-          <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="col-12 text-center">
-              <ul class="list-inline mb-5" id="portfolio-flters">
-                <li class="btn px-3 pe-4 active" data-filter="*">All</li>
-                <li class="btn px-3 pe-4" data-filter=".first">Baking</li>
-                <li class="btn px-3 pe-4" data-filter=".second">Pastry</li>
-              </ul>
-            </div>
-          </div>
-          <!-- <div class="row g-4 portfolio-container">
-            <div class="col-lg-4 col-md-6 portfolio-item first">
-              <div class="position-relative rounded overflow-hidden">
-                <img
-                  class="img-fluid w-100"
-                  src="../assets/portfolio-1.jpg"
-                  alt=""
-                />
-                <div class="portfolio-overlay">
-                  <a
-                    class="btn btn-light"
-                    href="../assets/portfolio-1.jpg"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-plus fa-2x text-primary"></i
-                  ></a>
-                  <div class="mt-auto">
-                    <small class="text-white"
-                      ><i class="fa fa-folder me-2"></i>INterior Design</small
-                    >
-                    <a class="h5 d-block text-white mt-1 mb-0" href=""
-                      >Project Name</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
+    <!-- FAQS -->
+    
     </div>
   </main>
 </template>
