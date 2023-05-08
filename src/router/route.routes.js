@@ -5,7 +5,7 @@ const routes = [
     component: () => import("@/views/HomeView.vue"),
     children: [
       {
-        path: "/admin",
+        path: "admin",
         name: "adminlayout",
         component: () => import("@/layouts/AdminLayout.vue"),
         chidlren: [

@@ -1,6 +1,5 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <script setup>
-
 import { services } from "../../data";
 // tabs
 </script>
@@ -110,7 +109,7 @@ import { services } from "../../data";
             </h6>
             <h2 class="mt-2">What Solutions We Provide</h2>
           </div>
-          <div class="row g-1 ml-3">
+          <div class="row g-2 ml-3">
             <div
               v-for="service in services"
               class="card col-lg-4 col-md-6 ml-2"
@@ -126,7 +125,11 @@ import { services } from "../../data";
                 <p>
                   {{ service.desc }}
                 </p>
-                <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                <div>
+                  <a class="btn btn-primary rounded-pill px-4 me-3" href=""
+                    >Read More</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -134,8 +137,7 @@ import { services } from "../../data";
       </div>
       <!-- Service End -->
 
-    <!-- FAQS -->
-    
+      <!-- FAQS -->
     </div>
   </main>
 </template>
