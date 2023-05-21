@@ -1,6 +1,7 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <script setup>
 import { services } from "../../data";
+import chefImage  from "../../public/chef.png";
 // tabs
 </script>
 
@@ -32,11 +33,7 @@ import { services } from "../../data";
               >
             </div>
             <div class="col-lg-6 text-center text-lg-start">
-              <img
-                class="img-fluid"
-                src="../../dist/assets/chef.png"
-                alt="no pic"
-              />
+              <img class="img-fluid" src="../../public/chef.png" alt="no pic" />
             </div>
           </div>
         </div>
@@ -91,7 +88,7 @@ import { services } from "../../data";
               </div>
             </div>
             <div class="col-lg-6">
-              <img class="img-fluid" src="../../dist/assets/bestchef.png" />
+              <img class="img-fluid" src="../../public/bestchef.png" />
             </div>
           </div>
         </div>
