@@ -4,8 +4,10 @@ import AdminSidebar from "@/components/admin/AdminSidebar.vue";
 </script>
 <template>
   <admin-header />
-  <admin-sidebar />
+  <div class="ml w-75">
+    <admin-sidebar />
+  </div>
   <div>
-    <router-view />
+    <router-view></router-view>
   </div>
 </template>

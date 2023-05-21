@@ -135,9 +135,6 @@ import { services } from "../../data";
           </div>
         </div>
       </div>
-      <!-- Service End -->
-
-      <!-- FAQS -->
     </div>
   </main>
 </template>
