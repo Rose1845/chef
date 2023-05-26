@@ -20,6 +20,35 @@ onMounted(() => {
       <router-link :to="{ name: 'home' }" class="navbar-brand p-0">
         <h1 class="m-0">Chef</h1>
       </router-link>
+      <!-- <div class="d-flex align-items-center">
+        <div class="dropdown ms-3">
+          <button
+            class="btn btn-secondary dropdown-toggle rounded-pill py-2 px-4"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <font-awesome-icon icon="user"></font-awesome-icon>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <li>
+              <router-link class="dropdown-item" :to="{ name: 'login' }"
+                >Login</router-link
+              >
+            </li>
+            <li>
+              <router-link class="dropdown-item" :to="{ name: 'register' }"
+                >Get Started</router-link
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+       -->
 
       <button
         @click="toggleNavBar"
@@ -36,21 +65,30 @@ onMounted(() => {
         id="navbarCollapse"
       >
         <div class="navbar-nav ms-auto py-0">
+          <router-link :to="{ name: 'restaurant' }" class="nav-item nav-link"
+            >Restaurant</router-link
+          >
+          <router-link
+            :to="{ name: 'cooking-classes' }"
+            class="nav-item nav-link"
+          >
+            Cooking Classes</router-link
+          >
           <router-link to="/contact" class="nav-item nav-link"
-            >Contact</router-link
+            >Contact Us</router-link
           >
           <div>
             <router-link
-              class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3"
+              class="btn btn-primary text-light rounded-pill py-2 px-4 ms-3"
               :to="{ name: 'login' }"
               >Login</router-link
             >
           </div>
           <div>
             <router-link
-              class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3"
+              class="btn btn-primary text-light rounded-pill py-2 px-4 ms-3"
               :to="{ name: 'register' }"
-              >Create account</router-link
+              >Get Started</router-link
             >
           </div>
         </div>

@@ -36,10 +36,10 @@ export default {
           <div
             class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp"
           >
+            <h2 class="mt-2">Do you Any Question?</h2>
             <h6 class="position-relative d-inline text-primary ps-4">
               Contact Us
             </h6>
-            <h2 class="mt-2">Any Question?</h2>
           </div>
           <div>
             <form>

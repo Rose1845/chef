@@ -25,6 +25,16 @@ const baseRoutes = [
         name: "contact",
         component: () => import("@/views/ContactView.vue"),
       },
+      {
+        path: "/restaurant",
+        name: "restaurant",
+        component: () => import("@/views/RestaurantView.vue"),
+      },
+      {
+        path: "/cooking-classes",
+        name: "cooking-classes",
+        component: () => import("@/views/CookingClasses.vue"),
+      },
     ],
   },
 ];

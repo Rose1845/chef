@@ -1,7 +1,6 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <script setup>
 import { services } from "../../data";
-import chefImage  from "../../public/chef.png";
 // tabs
 </script>
 
@@ -24,16 +23,11 @@ import chefImage  from "../../public/chef.png";
               <RouterLink
                 class="btn btn-primary py-sm-3 px-sm-5 rounded-pill me-3"
                 to="/register"
-                >Get Started</RouterLink
-              >
-              <RouterLink
-                class="btn btn-light text-dark py-sm-3 px-sm-5 rounded-pill"
-                to="/contact"
-                >Contact Us</RouterLink
+                >Find Your Chef</RouterLink
               >
             </div>
             <div class="col-lg-6 text-center text-lg-start">
-              <img class="img-fluid" src="../../public/chef.png" alt="no pic" />
+              <img class="img-fluid" src="/chef.png" alt="no pic" />
             </div>
           </div>
         </div>
@@ -88,7 +82,7 @@ import chefImage  from "../../public/chef.png";
               </div>
             </div>
             <div class="col-lg-6">
-              <img class="img-fluid" src="../../public/bestchef.png" />
+              <img class="img-fluid" src="/bestchef.png" />
             </div>
           </div>
         </div>
@@ -106,14 +100,14 @@ import chefImage  from "../../public/chef.png";
             </h6>
             <h2 class="mt-2">What Solutions We Provide</h2>
           </div>
-          <div class="row g-2 ml-3">
+          <div class="row  g-2 ml-3">
             <div
               v-for="service in services"
-              class="card col-lg-4 col-md-6 ml-2"
+              class="card col-lg-4 col-md-6 "
               :key="service.title"
             >
               <div
-                class="service-item d-flex flex-column justify-content-center text-center rounded"
+                class="service-item d-flex flex-column justify-content-center text-center rounded mr-3"
               >
                 <div class="service-icon flex-shrink-0 text-primary">
                   <font-awesome-icon :icon="service.icon"></font-awesome-icon>
