@@ -11,12 +11,9 @@
       "
       class="row d-flex justify-content-center align-items-center"
     >
-      <div
-        class="
-      "
-      >
+      <div class="">
         <h2 class="fs-2 text-white font-bold">Special Offer</h2>
-        <p class="text-white g-1">
+        <p class="text-white">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto neque
           minima quia delectus dolor, sit reiciendis hic, repudiandae asperiores
           maxime quos. Placeat adipisci labore expedita quibusdam distinctio a
@@ -24,7 +21,7 @@
         </p>
         <div>
           <button
-            class="btn rounded-pill text-white "
+            class="btn rounded-pill text-white"
             style="background-color: orange"
           >
             ORDER NOW
